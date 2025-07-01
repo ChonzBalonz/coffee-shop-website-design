@@ -116,9 +116,7 @@ section {
 .home {
     min-height: 100vh;
     padding-top: 12rem;
-    background: url(../image/home-bg.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../image/home-bg.jpg) center center / cover no-repeat fixed;
 }
 
 .home .row {
@@ -584,6 +582,11 @@ section {
     section {
         padding: 2rem;
     }
+
+    .home,
+    .crew-action {
+        background-attachment: scroll !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -656,7 +659,7 @@ section {
 }
 
 .crew-action {
-  background: #f5ecd7 url('../image/wood-grain.png') repeat;
+  background: #f5ecd7 url('../image/wood-grain.png') repeat fixed;
   background-size: 400px 400px;
   padding: 2rem 0;
 }
